@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: gray;
+  height: 6vh;
+}
+
+.nav {
+  height: 6vh;
+  display: flex;
+  width: 100%;
+  background-color: gray;
+  max-width: 2000px;
+  justify-content: flex-end;
+
+  list-style-type: none;
+  padding-right: 6vw;
+  align-items: center;
+}
+
+.cv-nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: gray;
+  height: 6vh;
+}
+
+.cv-nav {
+  display: flex;
+  justify-content: start;
+  display: flex;
+  list-style-type: none;
+  width: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav a {
+  margin-right: 3vw;
+  font-size: clamp(12px, 2vw, 30px);
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #1c1d25;
+  height: 100vh;
+  color: white;
+}
+
+.hero-area {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 80%;
+  max-width: 2000px;
+}
+
+.about {
+  padding-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.information {
+  width: 80%;
+  max-width: 2000px;
+}
+
+.information-title {
+  margin-bottom: 2rem;
+}
+
+.sub-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+  max-width: 2000px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+li {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: clamp(35px, 5vw, 70px);
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(20px, 3vw, 40px);
+}
+
+p {
+  margin: 0;
+  font-size: clamp(12px, 1.75vw, 25px);
+  font-weight: 300;
+}
+
+.subtext {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(100px, 15vw, 300px);
+  height: clamp(30px, 3vw, 75px);
+  border-radius: 20px;
+  background-color: coral;
+
+  font-size: 10px;
+  font-weight: 300;
+
+  margin-top: 1.5vh;
+  color: #a9a9a9;
+}
+
+.button a {
+  margin: 0;
+  font-size: clamp(12px, 1.75vw, 25px);
+}
+
+.button:hover {
+  background-color: #ef744b;
+}
+
+.button:active {
+  background-color: #a9a9a9;
+  color: #808080;
+}
+
+.socials {
+  width: 300px;
+  margin: 25px;
+  padding-bottom: 200px;
+}
+
+.social {
+  width: auto;
+  margin: 20px;
+}
+
+.projects-container {
+  padding-top: 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container p{
+  margin: 0;
+  font-size: clamp(10px, 1.3vw, 20px);
+  /* font-weight: 300; */
+}
+
+.projects-container h3{
+  margin: 0;
+  font-size: clamp(11px, 1.5vw, 20px);
+  font-weight: 600;
+}
+
+.project-card {
+  display: flex;
+  /* width: 25vw; */
+  height: 30vh;
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  margin: 10px;
+  margin-right: 3vw;
+  margin-left: 5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card img {
+  height: 90%;
+}
+
+.hosted-project-container {
+  width: 80%;
+  max-width: 2000px;
+  padding: 0;
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.hosted-project-text {
+  padding: 1rem;
+  /* width: 40%; */
+  text-align: left;
+}
+
+.code-project-container {
+  width: 80%;
+  max-width: 2000px;
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.code-project-container img {
+  height: 6vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+ .code-project-text {
+  margin-right: 5vw;
+ }
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: #ef744b;
+}
+
+#contact-me {
+  width: 100%;
+}
+
+#cv-nav {
+  background-color: #ef744b;
+  justify-content: start;
+  margin-left: 0;
+}
+
+.logo {
+  display: none;
+}
