@@ -275,6 +275,10 @@ p {
   margin-left: 0;
 }
 
+.cv-nav-container a {
+  font-size: clamp(12px, 2vw, 30px);
+}
+
 .logo {
   display: none;
 }
