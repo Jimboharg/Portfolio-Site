@@ -22,10 +22,10 @@ body {
   background-color: gray;
   max-width: 2000px;
   justify-content: flex-end;
-
   list-style-type: none;
   padding-right: 6vw;
   align-items: center;
+  position: relative;
 }
 
 .cv-nav-container {
@@ -48,6 +48,14 @@ a {
   font-size: clamp(12px, 2vw, 30px);
   text-decoration: none;
   color: white;
+}
+
+ .nav  :hover {
+color: coral;
+}
+
+.nav :active {
+color: #c04000;
 }
 
 .hero {
@@ -90,8 +98,6 @@ a {
   padding: 80px;
   max-width: 2000px;
 }
-
-
 
 li {
   text-decoration: none;
@@ -210,7 +216,7 @@ p {
   margin-bottom: 3rem;
 }
 
-.hosted-project-container  a {
+.hosted-project-container a {
   padding: 0;
 }
 
@@ -253,7 +259,6 @@ p {
   /* width: 85%; */
 }
 
-
 #contact-me {
   width: 100%;
 }
@@ -271,6 +276,13 @@ p {
   color: white;
 }
 
+.cv-nav-container :hover {
+  color: coral;
+}
+
+.cv-nav-container :active {
+  color: #c04000;
+}
 
 footer {
   background-color: black;
