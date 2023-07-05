@@ -235,7 +235,7 @@ p {
   width: 80%;
   max-width: 2000px;
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 3fr 7fr; */
   /* flex-direction: column;
   justify-content: flex;
   align-items: flex-start; */
@@ -243,18 +243,21 @@ p {
 }
 
 .code-project-container {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1.5fr 8.5fr;
   margin-bottom: 1rem;
 }
 
 .code-project-name {
-  display: flex;
-  width: 15%;
+  /* display: flex;
+  width: 15%; */
+  min-width: 70px;
 }
 
 .code-project-text {
   text-align: left;
-  width: 85%;
+  /* width: 85%; */
 }
 
 
