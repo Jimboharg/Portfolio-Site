@@ -38,14 +38,6 @@ body {
   height: 6vh;
 }
 
-.cv-nav {
-  display: flex;
-  justify-content: start;
-  display: flex;
-  list-style-type: none;
-  width: auto;
-}
-
 a {
   text-decoration: none;
   color: white;
@@ -141,6 +133,7 @@ p {
   justify-content: center;
   align-items: center;
   width: clamp(100px, 15vw, 300px);
+  max-width: 200px;
   height: clamp(30px, 3vw, 75px);
   border-radius: 20px;
   background-color: coral;
@@ -180,7 +173,6 @@ p {
 .projects-container p {
   margin: 0;
   font-size: clamp(10px, 1.3vw, 20px);
-  /* font-weight: 300; */
 }
 
 .projects-container h3 {
@@ -197,26 +189,16 @@ p {
 }
 
 .project-card {
-  /* display: flex; */
-  /* width: 25vw; */
-  /* height: 25vh; */
-  
-  
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
-  /* margin: 10px; */
   margin-right: 3vw;
-  /* margin-left: 5vw; */
   align-items: center;
   width: auto;
   object-fit: fill;
-  /* justify-content: center; */
-
 }
 
 .project-card img {
   height: 25vh;
   width: 23vh;
-  /* height: 100%; */
 }
 
 .hosted-project-container {
@@ -224,17 +206,14 @@ p {
   max-width: 2000px;
   padding: 0;
   display: flex;
-  /* border-style: solid; */
   border-width: 1px;
   justify-content: center;
   align-items: center;
-  /* margin-top: 3rem; */
   margin-bottom: 3rem;
 }
 
 .hosted-project-text {
   padding: 1rem;
-  /* width: 40%; */
   text-align: left;
 }
 
@@ -243,59 +222,26 @@ p {
   max-width: 2000px;
   display: flex;
   flex-direction: column;
-  /* border-style: solid; */
-  border-width: 1px;
   justify-content: flex;
   align-items: flex-start;
-
   margin-bottom: 10rem;
- 
 }
 
 .code-project-container {
- 
   display: flex;
-  /* border-style: solid; */
-  border-width: 1px;
-  /* justify-content: center; */
-  /* align-items: center; */
   margin-bottom: 1rem;
 }
 
-
-/* .code-project-container img {
-  height: 6vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-} */
-
 .code-project-name {
-  /* clear: both; */
-  /* display: inline-block; */
-  /* overflow: hidden; */
-  
   display: flex;
-  /* justify-content: flex-start; */
   width: 15%;
-  /* white-space: nowrap; */
-  /* margin: 2rem; */
   text-decoration: none;
   color: #ef744b;
-
 }
 
 .code-project-text {
   text-align: left;
   width: 85%;
-  
-
-}
-
-@media only screen and (max-width: 1000px) {
-  .project-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .hosted-project-link {
@@ -319,10 +265,12 @@ p {
   width: 100%;
 }
 
-#cv-nav {
-  background-color: #ef744b;
+.cv-nav {
+  display: flex;
   justify-content: start;
-  margin-left: 0;
+  display: flex;
+  list-style-type: none;
+  width: auto;
 }
 
 .cv-nav-container a {
