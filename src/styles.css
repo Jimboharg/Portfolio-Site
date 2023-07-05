@@ -156,11 +156,6 @@ p {
   background-color: #c04000;
 }
 
-/* .button:active {
-  background-color: #a9a9a9;
-  color: #808080;
-} */
-
 .projects-container {
   padding-top: 10rem;
   width: 100%;
@@ -239,10 +234,11 @@ p {
 .code-projects-container {
   width: 80%;
   max-width: 2000px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* flex-direction: column;
   justify-content: flex;
-  align-items: flex-start;
+  align-items: flex-start; */
   margin-bottom: 10rem;
 }
 
@@ -260,7 +256,6 @@ p {
   text-align: left;
   width: 85%;
 }
-
 
 
 #contact-me {
