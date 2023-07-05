@@ -50,12 +50,12 @@ a {
   color: white;
 }
 
- .nav  :hover {
-color: coral;
+.nav :hover {
+  color: coral;
 }
 
 .nav :active {
-color: #c04000;
+  color: #c04000;
 }
 
 .hero {
@@ -196,13 +196,15 @@ p {
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
   margin-right: 3vw;
   align-items: center;
-  width: auto;
-  object-fit: fill;
+  /* width: auto; */
+  /* object-fit: fill; */
 }
 
 .project-card img {
   height: 25vh;
   width: 23vh;
+  /* height: clamp(30px, 25vh, 400px); */
+  /* width: clamp(30px, 23vh, 350); */
 }
 
 .hosted-project-container {
@@ -210,7 +212,7 @@ p {
   max-width: 2000px;
   padding: 0;
   display: flex;
-  border-width: 1px;
+
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
@@ -234,10 +236,6 @@ p {
   width: 80%;
   max-width: 2000px;
   display: grid;
-  /* grid-template-columns: 3fr 7fr; */
-  /* flex-direction: column;
-  justify-content: flex;
-  align-items: flex-start; */
   margin-bottom: 10rem;
 }
 
@@ -291,4 +289,21 @@ footer {
 
   padding-top: 8rem;
   padding-bottom: 20rem;
+}
+
+@media screen and (max-width: 550px) {
+  .projects-container {
+    padding-top: 2rem;
+  }
+
+  .hosted-project-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .hosted-project-text {
+    padding-left: 0rem;
+  }
+  .code-projects-container {
+    margin-bottom: 3rem;
+  }
 }
