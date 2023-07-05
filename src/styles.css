@@ -91,14 +91,7 @@ a {
   max-width: 2000px;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
 
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
 
 li {
   text-decoration: none;
@@ -277,6 +270,12 @@ p {
   font-size: clamp(12px, 2vw, 30px);
 }
 
-.logo {
-  display: none;
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  padding-top: 8rem;
+  padding-bottom: 20rem;
 }
