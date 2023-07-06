@@ -1,8 +1,14 @@
-const hamburgerButton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
-
-function toggleButton() {
-    navList.classList.toggle('show')
-}
-
-hamburgerButton.addEventListener('click', toggleButton)
+window.onload = function pingRender() {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "https://portfolio-finance-app.onrender.com");
+  xhr.send();
+  xhr.responseType = "json";
+  xhr.onload = () => {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      const data = xhr.response;
+      console.log(data);
+    } else {
+      console.log(`Error: ${xhr.status}`);
+    }
+  };
+};
