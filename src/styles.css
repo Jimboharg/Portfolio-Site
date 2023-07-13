@@ -67,6 +67,10 @@ a {
   color: white;
 }
 
+.hero h2{
+  padding-bottom: 1rem;
+}
+
 .hero-area {
   display: flex;
   height: 100%;
