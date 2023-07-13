@@ -49,7 +49,6 @@ body {
 
 a {
   text-decoration: none;
-  /* color: white; */
 }
 
 .nav a {
@@ -207,15 +206,11 @@ p {
   box-shadow: 5px 5px 20px rgb(197, 195, 195);
   margin-right: 3vw;
   align-items: center;
-  /* width: auto; */
-  /* object-fit: fill; */
 }
 
 .project-card img {
   height: 25vh;
   width: 23vh;
-  /* height: clamp(30px, 25vh, 400px); */
-  /* width: clamp(30px, 23vh, 350); */
 }
 
 .hosted-project-container {
@@ -258,14 +253,11 @@ p {
 }
 
 .code-project-name {
-  /* display: flex;
-  width: 15%; */
   min-width: 70px;
 }
 
 .code-project-text {
   text-align: left;
-  /* width: 85%; */
 }
 
 #contact-me {
