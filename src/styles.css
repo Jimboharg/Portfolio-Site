@@ -28,6 +28,11 @@ body {
   position: relative;
 }
 
+.cv {
+  display: flex;
+  flex-direction: column;
+}
+
 .cv-nav-container {
   position: fixed;
   display: flex;
@@ -36,6 +41,10 @@ body {
   width: 100%;
   background-color: gray;
   height: 6vh;
+}
+
+.cv-container{
+  margin-top: 6vh;
 }
 
 a {
@@ -141,10 +150,8 @@ p {
   height: clamp(30px, 3vw, 75px);
   border-radius: 20px;
   background-color: coral;
-
   font-size: 10px;
   font-weight: 300;
-
   margin-top: 1.5vh;
   color: #a9a9a9;
 }
